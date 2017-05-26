@@ -9,7 +9,7 @@
     <string name="camera_topic">tango/camera/color_1/image_raw/compressed</string>
     <string name="joystick_topic">cmd_vel</string>
     <string name="map_topic">map</string>
-    <string name="scan_topic">scan</string>
+    <string name="scan_topic">tango/laser_scan</string>
     <string name="global_plan_topic">move_base/TrajectoryPlannerROS/global_plan</string>
     <string name="initial_pose_topic">initialpose</string>
     <string name="simple_goal_topic">move_base_simple/goal</string>
