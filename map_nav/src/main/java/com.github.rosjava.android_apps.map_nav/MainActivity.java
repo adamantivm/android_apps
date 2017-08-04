@@ -154,7 +154,9 @@ public class MainActivity extends RosAppActivity {
         String robotFrame = (String) params.get("robot_frame", getString(R.string.robot_frame));
 
         OccupancyGridLayer occupancyGridLayer = new OccupancyGridLayer(appNameSpace.resolve(mapTopic).toString());
-        LaserScanLayer laserScanLayer = new LaserScanLayer(appNameSpace.resolve(scanTopic).toString());
+        LaserScanLayer laserScanLayer = new LaserScanLayer(appNameSpace.resolve(scanTopic).toString()) {
+
+		};
         PathLayer pathLayer = new PathLayer(appNameSpace.resolve(planTopic).toString());
         mapPosePublisherLayer = new com.github.rosjava.android_apps.map_nav.MapPosePublisherLayer(this, appNameSpace, params, remaps);
         com.github.rosjava.android_apps.map_nav.InitialPoseSubscriberLayer initialPoseSubscriberLayer =

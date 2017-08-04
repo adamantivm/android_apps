@@ -18,3 +18,5 @@ include 'teleop'
 include 'map_nav'
 include 'make_a_map'
 include 'map_manager'
+include ':android_15'
+project(':android_15').projectDir = new File("../android_core/android_15")
